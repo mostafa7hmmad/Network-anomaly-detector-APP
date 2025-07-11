@@ -1,7 +1,8 @@
 streamlit
 pandas
+numpy
 scikit-learn
-tensorflow
-gdown
+tensorflow==2.12.0
 joblib
+gdown
 streamlit-lottie
