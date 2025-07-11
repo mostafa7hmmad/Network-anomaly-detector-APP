@@ -1,0 +1,11 @@
+Method,Content-Length,URL,cookie
+GET,Content-Length: 63,http://localhost:8080/tienda1/publico/anadir.jsp?id=3 HTTP/1.1,JSESSIONID=A1B2C3D4E5F6G7H8
+POST,Content-Length: 128,http://localhost:8080/tienda1/publico/index.jsp HTTP/1.1,JSESSIONID=XYZ1234567890
+GET,Content-Length: 89,http://localhost:8080/tienda1/publico/carrito.jsp HTTP/1.1,JSESSIONID=ABCDEF9876543210
+POST,Content-Length: 72,http://localhost:8080/tienda1/publico/productos.jsp HTTP/1.1,JSESSIONID=JKL0987654321
+GET,Content-Length: 95,http://localhost:8080/tienda1/publico/detalle.jsp HTTP/1.1,JSESSIONID=1234ABCDE5678
+POST,Content-Length: 1024,http://localhost:8080/tienda1/private/admin/delete.jsp?id=999 HTTP/1.1,EVILSESSIONID=INJECTX1
+PUT,Content-Length: 880,http://localhost:8080/tienda1/private/hack.jsp HTTP/1.1,ATTACKID=MALWAREPAYLOAD123
+POST,Content-Length: 750,http://localhost:8080/tienda1/private/shell.jsp HTTP/1.1,COOKIE=ROOTACCESSGRANT
+PUT,Content-Length: 960,http://localhost:8080/tienda1/private/sqlinjection.jsp HTTP/1.1,SQLID=DROP+TABLE+USERS
+POST,Content-Length: 1111,http://localhost:8080/tienda1/private/upload.jsp HTTP/1.1,UPLOADCOOKIE=EVILSCRIPT
