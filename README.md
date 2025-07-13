@@ -1,27 +1,20 @@
-# Network-anomaly-detector-APP
-
+# 🚨 Network Anomaly Detection Web App
+#### **A deep learning-powered Flask application that detects DDoS attacks and HTTP anomalies in network traffic. The app supports CSV file uploads, generates predictions using trained LSTM**models, and visualizes results in a modern, animated interface**
 ```
 
-📦 1. Data Collection
-    └── Gathered from CIC-DDoS2017 dataset and simulated logs.
-
-🧼 2. Data Preprocessing
-    └── Feature selection, normalization (MinMax / StandardScaler),
-        label encoding, cookie tokenization.
-
-🧠 3. Model Training
-    └── LSTM model for temporal pattern recognition
-    └── Separate models for CIC and DDoS feature sets.
-
-📁 4. Model Saving
-    └── Models saved as .h5 and scaler as .pkl (using joblib)
-
-🌐 5. Streamlit Interface
-    └── Two-tab layout:
-         • CIC DDoS Detection
-         • General DDoS Attack Detection
-    └── Supports manual inputs and batch CSV upload.
-
-☁️ 6. Deployment
-    └── Hosted on Streamlit Cloud.
-    └── Models downloaded from Google Drive using gdown.
+.
+├── app.py                     # Main Flask app
+├── models/
+│   ├── best_model-ddos.h5     # LSTM model for DDoS detection
+│   ├── best_model-cic.h5      # LSTM model for CIC log data
+│   └── scaler.pkl             # Pre-trained scaler (joblib)
+├── templates/
+│   ├── index.html             # Home page
+│   ├── model1.html            # DDoS prediction page
+│   └── model2.html            # CIC prediction page
+├── static/
+│   └── css/
+│       └── style.css          # Custom dark theme + animations
+├── page_mapping.json          # Encoded page label mapping
+├── requirements.txt           # All Python dependencies
+└── README.md                  # You're here!
