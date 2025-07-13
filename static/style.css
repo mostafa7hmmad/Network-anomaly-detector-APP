@@ -1,0 +1,44 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+canvas#snow-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Main content */
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+a, h1, h2, h3, h4, h5, h6, label, p {
+  color: #ffffff;
+}
+
+.glow {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.scale-up {
+  transition: all 0.3s ease-in-out;
+}
+.scale-up:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ffff60;
+}
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
